@@ -1,9 +1,28 @@
-//
-//  ObjectiveCAdaptor.m
-//  SpeakHere
-//
-//  Created by Mark Xiong on 8/13/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+#import "ObjectiveCAdaptor.h"
+#include "CPlusPlusClass.h"
 
-#include <iostream>
+@implementation ObjectiveCAdaptor
+
+- (id) init {
+    if (self = [super init]) {
+        testObj = new CPlusPlusClass();
+    }
+    
+    return self;
+}
+
+- (void) dealloc {
+    if (testObj != NULL) {
+        delete testObj;
+        testObj = NULL;
+    }
+    [super dealloc];
+}
+
+- (void) objectiveFunc
+{
+    testObj->setInt(5);
+    testObj->func();
+}  
+    @end
+  

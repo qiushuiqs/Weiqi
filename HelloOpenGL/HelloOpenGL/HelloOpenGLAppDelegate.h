@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OpenGLView.h"
 
-@interface HelloOpenGLAppDelegate : UIResponder <UIApplicationDelegate>
+@interface HelloOpenGLAppDelegate : UIResponder <UIApplicationDelegate>{
+    OpenGLView* _glView;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) IBOutlet OpenGLView *glView;
 
 @end

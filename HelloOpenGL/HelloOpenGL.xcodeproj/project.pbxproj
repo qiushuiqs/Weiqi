@@ -13,6 +13,11 @@
 		F695E36D15D0A91900CB9957 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F695E36B15D0A91900CB9957 /* InfoPlist.strings */; };
 		F695E36F15D0A91900CB9957 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F695E36E15D0A91900CB9957 /* main.m */; };
 		F695E37315D0A91900CB9957 /* HelloOpenGLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F695E37215D0A91900CB9957 /* HelloOpenGLAppDelegate.m */; };
+		F695E37B15D0A9B200CB9957 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = F695E37A15D0A9B200CB9957 /* OpenGLView.m */; };
+		F695E37D15D0AA2100CB9957 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F695E37C15D0AA2100CB9957 /* QuartzCore.framework */; };
+		F695E37F15D0AA4300CB9957 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F695E37E15D0AA4300CB9957 /* OpenGLES.framework */; };
+		F695E38115D0B67A00CB9957 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F695E38015D0B67A00CB9957 /* SimpleVertex.glsl */; };
+		F695E38315D0BA2100CB9957 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F695E38215D0BA2100CB9957 /* SimpleFragment.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +25,18 @@
 		F695E36215D0A91900CB9957 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F695E36415D0A91900CB9957 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F695E36615D0A91900CB9957 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F695E36A15D0A91900CB9957 /* HelloOpenGL-Info.plist */ = {isa = PBXFileReference; path = "HelloOpenGL-Info.plist"; sourceTree = "<group>"; };
+		F695E36A15D0A91900CB9957 /* HelloOpenGL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloOpenGL-Info.plist"; sourceTree = "<group>"; };
 		F695E36C15D0A91900CB9957 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F695E36E15D0A91900CB9957 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F695E37015D0A91900CB9957 /* HelloOpenGL-Prefix.pch */ = {isa = PBXFileReference; path = "HelloOpenGL-Prefix.pch"; sourceTree = "<group>"; };
-		F695E37115D0A91900CB9957 /* HelloOpenGLAppDelegate.h */ = {isa = PBXFileReference; path = HelloOpenGLAppDelegate.h; sourceTree = "<group>"; };
+		F695E37015D0A91900CB9957 /* HelloOpenGL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloOpenGL-Prefix.pch"; sourceTree = "<group>"; };
+		F695E37115D0A91900CB9957 /* HelloOpenGLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloOpenGLAppDelegate.h; sourceTree = "<group>"; };
 		F695E37215D0A91900CB9957 /* HelloOpenGLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloOpenGLAppDelegate.m; sourceTree = "<group>"; };
+		F695E37915D0A9B200CB9957 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		F695E37A15D0A9B200CB9957 /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
+		F695E37C15D0AA2100CB9957 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F695E37E15D0AA4300CB9957 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F695E38015D0B67A00CB9957 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		F695E38215D0BA2100CB9957 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = ../SimpleFragment.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F695E37F15D0AA4300CB9957 /* OpenGLES.framework in Frameworks */,
+				F695E37D15D0AA2100CB9957 /* QuartzCore.framework in Frameworks */,
 				F695E36315D0A91900CB9957 /* UIKit.framework in Frameworks */,
 				F695E36515D0A91900CB9957 /* Foundation.framework in Frameworks */,
 				F695E36715D0A91900CB9957 /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +58,8 @@
 		F695E35315D0A91900CB9957 = {
 			isa = PBXGroup;
 			children = (
+				F695E37E15D0AA4300CB9957 /* OpenGLES.framework */,
+				F695E37C15D0AA2100CB9957 /* QuartzCore.framework */,
 				F695E36815D0A91900CB9957 /* HelloOpenGL */,
 				F695E36115D0A91900CB9957 /* Frameworks */,
 				F695E35F15D0A91900CB9957 /* Products */,
@@ -74,6 +89,8 @@
 			children = (
 				F695E37115D0A91900CB9957 /* HelloOpenGLAppDelegate.h */,
 				F695E37215D0A91900CB9957 /* HelloOpenGLAppDelegate.m */,
+				F695E37915D0A9B200CB9957 /* OpenGLView.h */,
+				F695E37A15D0A9B200CB9957 /* OpenGLView.m */,
 				F695E36915D0A91900CB9957 /* Supporting Files */,
 			);
 			path = HelloOpenGL;
@@ -82,6 +99,8 @@
 		F695E36915D0A91900CB9957 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F695E38015D0B67A00CB9957 /* SimpleVertex.glsl */,
+				F695E38215D0BA2100CB9957 /* SimpleFragment.glsl */,
 				F695E36A15D0A91900CB9957 /* HelloOpenGL-Info.plist */,
 				F695E36B15D0A91900CB9957 /* InfoPlist.strings */,
 				F695E36E15D0A91900CB9957 /* main.m */,
@@ -142,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F695E36D15D0A91900CB9957 /* InfoPlist.strings in Resources */,
+				F695E38115D0B67A00CB9957 /* SimpleVertex.glsl in Resources */,
+				F695E38315D0BA2100CB9957 /* SimpleFragment.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +175,7 @@
 			files = (
 				F695E36F15D0A91900CB9957 /* main.m in Sources */,
 				F695E37315D0A91900CB9957 /* HelloOpenGLAppDelegate.m in Sources */,
+				F695E37B15D0A9B200CB9957 /* OpenGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
